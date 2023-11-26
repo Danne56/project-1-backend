@@ -24,11 +24,13 @@ app.post('/login', (req, res) => {
   // check if username is valid
   if (req.body.username !== username) {
     res.json({ status: 'error, username not found' })
+    return
   }
 
   // check if password is valid
   if (req.body.password !== password) {
     res.json({ status: 'error, wrong password' })
+    return
   }
 
     res.json({ status: 'success' })
