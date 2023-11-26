@@ -16,17 +16,6 @@ app.use(cors())
 app.use(jsonParser);
 app.use(urlencodedParser);
 
-app.get('/', (req, res) => {
-  res.json('Hello World')
-})
-
-app.get('/about', (req, res) => {
-  res.json({
-    page: 'about',
-    status: 'success'
-  })
-})
-
 app.post('/login', (req, res) => {
  // Simulasi data dari database
  const username = 'jane'
