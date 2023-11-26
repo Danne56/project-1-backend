@@ -17,21 +17,21 @@ app.use(jsonParser);
 app.use(urlencodedParser);
 
 app.post('/login', (req, res) => {
- // Simulasi data dari database
- const username = 'jane'
- const password = '12345678'
+  // Simulasi data dari database
+  const username = 'Danne'
+  const password = '09865421'
 
- // check if username is valid
- if (req.body.username !== username) {
-  res.json({ status: 'error, username not found' })
- }
+  // check if username is valid
+  if (req.body.username !== username) {
+    res.json({ status: 'error, username not found' })
+  }
 
   // check if password is valid
   if (req.body.password !== password) {
     res.json({ status: 'error, wrong password' })
-   }
+  }
 
-   res.json({ status: 'success' })
+    res.json({ status: 'success' })
 })
 
 app.listen(port, () => {
