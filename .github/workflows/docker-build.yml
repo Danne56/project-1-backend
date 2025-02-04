@@ -31,4 +31,3 @@ jobs:
           push: true
           tags: |
             ghcr.io/danne56/project-1-backend:latest
-            ghcr.io/danne56/project-1-backend:${{ github.sha }}
